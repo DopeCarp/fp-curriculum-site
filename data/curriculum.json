@@ -1,0 +1,241 @@
+{
+  "overview": {
+    "intro_zh": "本网站服务于 F+P Group 的课程展示，用于清晰呈现前四学期的课程结构、课程路径与教学组织，同时便于学生理解课程安排，也支持其他学组查阅、对照与协同理解。",
+    "intro_en": "This website serves the F+P Group as a curriculum presentation platform, making the first four semesters' course structure, pathway, and teaching organization legible for students while also supporting reference and coordination across other academic groups.",
+    "reading_zh": "网站以路径、逻辑、能力、矩阵和教学模型五个维度组织，既支持 F+P Group 对课程体系的整体展示，也帮助学生理解课程安排，并便于其他学组从结构、课程类型与学期安排等角度进行查阅。",
+    "reading_en": "The website is organized through pathway, logic, abilities, matrix, and teaching model views, supporting F+P's overall presentation of the curriculum, helping students understand course arrangements, and enabling cross-group consultation through structure, course type, and semester arrangement."
+  },
+  "semesterSummary": [
+    {
+      "semester": 1,
+      "foundation_zh": "基础课程",
+      "foundation_en": "Foundation Courses",
+      "public_zh": "公共课程",
+      "public_en": "Public Courses",
+      "general_zh": "通识课",
+      "general_en": "General Courses",
+      "general_credits": 12,
+      "total_credits": 25
+    },
+    {
+      "semester": 2,
+      "foundation_zh": "基础课程",
+      "foundation_en": "Foundation Courses",
+      "public_zh": "公共课程",
+      "public_en": "Public Courses",
+      "general_zh": "通识课",
+      "general_en": "General Courses",
+      "general_credits": 13,
+      "total_credits": 26
+    },
+    {
+      "semester": 3,
+      "foundation_zh": "基础课程",
+      "foundation_en": "Foundation Courses",
+      "public_zh": "公共课程",
+      "public_en": "Public Courses",
+      "general_zh": "通识课",
+      "general_en": "General Courses",
+      "general_credits": 5,
+      "total_credits": 20
+    },
+    {
+      "semester": 4,
+      "foundation_zh": "基础课程",
+      "foundation_en": "Foundation Courses",
+      "public_zh": "公共课程",
+      "public_en": "Public Courses",
+      "general_zh": "通识课",
+      "general_en": "General Courses",
+      "general_credits": 1,
+      "total_credits": 2
+    }
+  ],
+  "pathway": [
+    {
+      "year": "Year 1",
+      "title_zh": "共享基础",
+      "title_en": "Shared Foundation",
+      "description_zh": "建立观察、感知、表达与研究方法的共同基础。",
+      "description_en": "Build a shared basis in observation, perception, expression, and research methods.",
+      "skill_zh": ["基础观察与记录", "视觉表达", "草图与图示沟通"],
+      "skill_en": ["Basic observation and documentation", "Visual expression", "Sketching and diagrammatic communication"],
+      "knowledge_zh": ["设计导论", "设计历史、理论和文化", "研究与表达的基础逻辑"],
+      "knowledge_en": ["Introduction to design", "Design history, theory, and culture", "Foundational logics of research and representation"],
+      "competence_zh": ["理解设计学科", "建立共同语言", "将想法转化为清晰表达"],
+      "competence_en": ["Understand design as a discipline", "Build a shared design language", "Translate ideas into clear communication"]
+    },
+    {
+      "year": "Year 2",
+      "title_zh": "衔接专向",
+      "title_en": "Bridging Specialization",
+      "description_zh": "在跨媒介训练中形成面向不同方向的衔接能力。",
+      "description_en": "Form bridging capabilities across media as students move toward specialization.",
+      "skill_zh": ["编程基础", "结构与制作", "数字媒介组织"],
+      "skill_en": ["Programming fundamentals", "Structure and fabrication", "Digital media organization"],
+      "knowledge_zh": ["材料与工艺", "设计实现逻辑", "AI 辅助创意实践"],
+      "knowledge_en": ["Materials and processes", "Design realization logic", "AI-assisted creative practice"],
+      "competence_zh": ["连接概念与实现", "跨媒介转译", "建立初步数字能力"],
+      "competence_en": ["Connect concept and realization", "Translate across media", "Build initial digital capability"]
+    },
+    {
+      "year": "Year 3",
+      "title_zh": "能力成长",
+      "title_en": "Capability Growth",
+      "description_zh": "在结构、实现、计算与协作中扩展综合能力。",
+      "description_en": "Expand integrated capabilities in structure, realization, computation, and collaboration.",
+      "skill_zh": ["观察研究与实验", "数据与可视化", "交互叙事"],
+      "skill_en": ["Observation, research, and experimentation", "Data and visualization", "Interactive narrative"],
+      "knowledge_zh": ["计算与信息组织", "具身体验与交互", "项目推进方法"],
+      "knowledge_en": ["Computation and information organization", "Embodied experience and interaction", "Project development methods"],
+      "competence_zh": ["形成系统化研究判断", "在交互媒介中组织内容", "推动协作式实现"],
+      "competence_en": ["Develop systematic research judgment", "Organize content in interactive media", "Advance collaborative realization"]
+    },
+    {
+      "year": "Year 4",
+      "title_zh": "创新转化",
+      "title_en": "Spinovation",
+      "description_zh": "将课程积累转化为项目展示、研究表达与实践输出。",
+      "description_en": "Translate accumulated learning into project presentation, research articulation, and practice outcomes.",
+      "skill_zh": ["项目整合", "展示与论述", "跨学科协作"],
+      "skill_en": ["Project integration", "Presentation and articulation", "Interdisciplinary collaboration"],
+      "knowledge_zh": ["创新与创业逻辑", "项目管理", "面向外部的成果组织"],
+      "knowledge_en": ["Innovation and entrepreneurship logic", "Project management", "Outcome organization for external audiences"],
+      "competence_zh": ["完成整合性输出", "对接后续专业方向", "将学习转化为实践能力"],
+      "competence_en": ["Deliver integrated outcomes", "Bridge into later specializations", "Translate learning into practice"]
+    }
+  ],
+  "keywords": [
+    { "zh": "感知与表达", "en": "Perception & Expression" },
+    { "zh": "认知与观察", "en": "Cognition & Observation" },
+    { "zh": "制作与实验", "en": "Making & Experiment" },
+    { "zh": "理论与文化", "en": "Theory & Culture" },
+    { "zh": "方法与技术", "en": "Methods & Techniques" }
+  ],
+  "logicFlow": [
+    { "zh": "理解设计", "en": "Understand Design" },
+    { "zh": "识别问题", "en": "Identify Problems" },
+    { "zh": "表达想法", "en": "Express Ideas" },
+    { "zh": "建构与实现", "en": "Build and Realize" },
+    { "zh": "进入当代媒介与智能系统", "en": "Enter Contemporary Media and Intelligent Systems" }
+  ],
+  "domains": [
+    {
+      "name_zh": "认知与研究",
+      "name_en": "Cognition and Research",
+      "description_zh": "通过观察、记录、分析与论述建立问题意识和研究方法。",
+      "description_en": "Build problem awareness and research methods through observation, documentation, analysis, and articulation."
+    },
+    {
+      "name_zh": "表达与再现",
+      "name_en": "Expression and Representation",
+      "description_zh": "通过图像、文本、版式与叙事形成清晰的设计表达能力。",
+      "description_en": "Develop clear design communication through image, text, composition, and narrative."
+    },
+    {
+      "name_zh": "技术与制作",
+      "name_en": "Technology and Making",
+      "description_zh": "通过材料、结构、工艺和原型建立设计实现能力。",
+      "description_en": "Build realization skills through material, structure, craft, and prototyping."
+    },
+    {
+      "name_zh": "数字、计算与交互",
+      "name_en": "Digital, Computation and Interaction",
+      "description_zh": "以数字媒介、计算逻辑与交互原型进入当代系统协作。",
+      "description_en": "Enter contemporary system collaboration through digital media, computational logic, and interaction prototyping."
+    }
+  ],
+  "layers": [
+    { "name_zh": "层级 1：共享基础", "name_en": "Layer 1: Shared Foundation" },
+    { "name_zh": "层级 2：设计实现与数字媒介", "name_en": "Layer 2: Design Realization and Digital Media" },
+    { "name_zh": "层级 3：交互与系统协作", "name_en": "Layer 3: Interaction and System Collaboration" }
+  ],
+  "abilities": [
+    {
+      "name_zh": "设计认知",
+      "name_en": "Design Cognition",
+      "description_zh": "理解设计的历史、语境、方法与学科定位。",
+      "description_en": "Understand the history, context, methods, and disciplinary positioning of design."
+    },
+    {
+      "name_zh": "观察与研究",
+      "name_en": "Observation and Research",
+      "description_zh": "将观察、调研、分析与论证转化为设计判断。",
+      "description_en": "Turn observation, inquiry, analysis, and argument into design judgment."
+    },
+    {
+      "name_zh": "视觉与媒介表达",
+      "name_en": "Visual and Media Expression",
+      "description_zh": "在静态与动态媒介中形成视觉叙事与信息组织能力。",
+      "description_en": "Develop visual narrative and information organization across static and time-based media."
+    },
+    {
+      "name_zh": "结构与实现",
+      "name_en": "Structure and Realization",
+      "description_zh": "理解材料、结构与工艺，并完成原型制作与验证。",
+      "description_en": "Understand material, structure, and craft while producing and testing prototypes."
+    },
+    {
+      "name_zh": "数字与计算能力",
+      "name_en": "Digital and Computational Skills",
+      "description_zh": "掌握数字工具、规则系统与基础计算逻辑。",
+      "description_en": "Gain fluency in digital tools, rule-based systems, and fundamental computational logic."
+    },
+    {
+      "name_zh": "交互与系统",
+      "name_en": "Interaction and Systems",
+      "description_zh": "面向复杂媒介情境，形成交互原型与系统协作能力。",
+      "description_en": "Develop interaction prototyping and system collaboration for complex media contexts."
+    }
+  ],
+  "teachingModel": [
+    {
+      "name_zh": "公共讲座",
+      "name_en": "Common Lectures",
+      "description_zh": "通过共享知识框架建立共同问题意识与理论背景。",
+      "description_en": "Establish a shared intellectual frame and theoretical background through common lectures.",
+      "focus_zh": ["共同概念", "理论背景", "课程框架对齐"],
+      "focus_en": ["Shared concepts", "Theoretical background", "Curriculum framing and alignment"],
+      "outputs_zh": ["阅读框架", "基础认知", "问题意识"],
+      "outputs_en": ["Reading framework", "Foundational understanding", "Problem awareness"],
+      "collaboration_zh": ["全体共享输入", "跨课程共同参照"],
+      "collaboration_en": ["Shared input across cohorts", "Common reference across courses"]
+    },
+    {
+      "name_zh": "分组研讨",
+      "name_en": "Grouped Seminars",
+      "description_zh": "在小组讨论中推进阅读、分析、批评与方法辨析。",
+      "description_en": "Advance reading, analysis, critique, and methodological discussion in grouped seminars.",
+      "focus_zh": ["文本阅读", "案例分析", "方法讨论"],
+      "focus_en": ["Textual reading", "Case analysis", "Method discussion"],
+      "outputs_zh": ["讨论记录", "阶段判断", "概念澄清"],
+      "outputs_en": ["Discussion notes", "Interim judgment", "Concept clarification"],
+      "collaboration_zh": ["小组对话", "同伴反馈"],
+      "collaboration_en": ["Small-group dialogue", "Peer feedback"]
+    },
+    {
+      "name_zh": "分组工作坊",
+      "name_en": "Grouped Workshops",
+      "description_zh": "以动手实验和原型迭代连接概念与实现。",
+      "description_en": "Connect concepts and realization through making, experimentation, and iterative prototyping.",
+      "focus_zh": ["实验制作", "原型迭代", "媒介测试"],
+      "focus_en": ["Experimental making", "Prototype iteration", "Media testing"],
+      "outputs_zh": ["样机与模型", "实验记录", "过程反馈"],
+      "outputs_en": ["Mockups and models", "Experiment records", "Process feedback"],
+      "collaboration_zh": ["师生面对面指导", "跨角色协作制作"],
+      "collaboration_en": ["Direct faculty guidance", "Cross-role collaboration in making"]
+    },
+    {
+      "name_zh": "最终展示 / 展览",
+      "name_en": "Final Presentation / Exhibition",
+      "description_zh": "通过公开展示整合研究过程、设计成果与反馈机制。",
+      "description_en": "Integrate research process, design outcomes, and feedback through public presentation and exhibition.",
+      "focus_zh": ["成果整合", "叙事呈现", "公开评议"],
+      "focus_en": ["Outcome integration", "Narrative presentation", "Public review"],
+      "outputs_zh": ["最终展示", "课程归档", "阶段总结"],
+      "outputs_en": ["Final presentation", "Course archive", "Stage synthesis"],
+      "collaboration_zh": ["公开讨论", "跨组交流与反馈"],
+      "collaboration_en": ["Public discussion", "Cross-group exchange and feedback"]
+    }
+  ]
+}
