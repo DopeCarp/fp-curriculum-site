@@ -83,6 +83,33 @@
       "title_en": "Bridging Specialization",
       "description_zh": "在跨媒介训练中形成面向不同方向的衔接能力。",
       "description_en": "Form bridging capabilities across media as students move toward specialization.",
+      "groups": [
+        {
+          "name_zh": "M+E 媒体与娱乐设计",
+          "name_en": "M+E Media and Entertainment Design",
+          "href": null
+        },
+        {
+          "name_zh": "H+M 人机协同设计",
+          "name_en": "H+M Human-Machine Collaborative Design",
+          "href": null
+        },
+        {
+          "name_zh": "E+S 环境与场景设计",
+          "name_en": "E+S Environment and Scenography Design",
+          "href": null
+        },
+        {
+          "name_zh": "S+M 设计战略和管理",
+          "name_en": "S+M Design Strategy and Management",
+          "href": null
+        },
+        {
+          "name_zh": "F+P 设计基础和公共课",
+          "name_en": "F+P Foundation and Public Courses",
+          "href": null
+        }
+      ],
       "skill_zh": ["编程基础", "结构与制作", "数字媒介组织"],
       "skill_en": ["Programming fundamentals", "Structure and fabrication", "Digital media organization"],
       "knowledge_zh": ["材料与工艺", "设计实现逻辑", "AI 辅助创意实践"],

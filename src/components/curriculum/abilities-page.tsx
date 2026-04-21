@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/components/providers/language-provider";
 import { CourseDetailDrawer } from "@/components/shared/course-detail-drawer";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -23,6 +23,17 @@ export function AbilitiesPage({
   const relatedCourses = courses.filter((course) =>
     course.abilities.includes(activeAbility),
   );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const requestedAbility = new URLSearchParams(window.location.search).get("ability");
+    if (
+      requestedAbility &&
+      curriculum.abilities.some((ability) => ability.name_en === requestedAbility)
+    ) {
+      setActiveAbility(requestedAbility);
+    }
+  }, [curriculum.abilities]);
 
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-12 lg:px-10 lg:py-16">

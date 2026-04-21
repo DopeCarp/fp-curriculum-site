@@ -9,7 +9,7 @@ import { cn, uiLabel } from "@/lib/utils";
 
 const navItems = [
   { href: "/", zh: "首页", en: "Home" },
-  { href: "/abilities", zh: "能力", en: "Abilities" },
+  { href: "/design-philosophy", zh: "设计教育理念", en: "Design Education Philosophy" },
   { href: "/course-matrix", zh: "课程矩阵", en: "Matrix" },
   { href: "/teaching-model", zh: "教学模型", en: "Teaching Model" },
 ];
@@ -24,11 +24,15 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-4 lg:px-10">
           <div className="flex items-center justify-between gap-6">
             <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">
-                {uiLabel(language, "F+P 学组", "F+P Group")}
+              <p className="text-xs tracking-[0.2em] text-[var(--muted)]">
+                {uiLabel(
+                  language,
+                  "上海工程技术大学 设计学院",
+                  "School of Design, Shanghai University of Engineering Science",
+                )}
               </p>
               <p className="font-serif text-lg">
-                {uiLabel(language, "公共与基础课程", "Public & Foundation Courses")}
+                {uiLabel(language, "公共与基础学组", "Public & Foundation Group")}
               </p>
             </div>
             <div className="flex items-center gap-4">

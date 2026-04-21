@@ -47,6 +47,11 @@ export type PathwayStage = {
   title_zh: string;
   title_en: string;
 } & BilingualDescription & {
+  groups?: Array<{
+    name_zh: string;
+    name_en: string;
+    href?: string | null;
+  }>;
   skill_zh: string[];
   skill_en: string[];
   knowledge_zh: string[];

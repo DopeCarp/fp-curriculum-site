@@ -1,7 +1,5 @@
-import curriculum from "../../data/curriculum.json";
-import { HomePage } from "@/components/home/home-page";
-import { CurriculumData } from "@/types/curriculum";
+import { LandingPage } from "@/components/home/landing-page";
 
 export default function Page() {
-  return <HomePage curriculum={curriculum as CurriculumData} />;
+  return <LandingPage />;
 }
