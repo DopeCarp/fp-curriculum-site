@@ -222,8 +222,7 @@ export function CourseMatrixPage({
             />
           ))}
 
-          <div className="border-r border-t border-[var(--line)] bg-[var(--card)] p-5 text-center font-medium leading-6" />
-          <div className="whitespace-pre-line border-r border-t border-[var(--line)] bg-[var(--card)] p-5 text-center font-medium leading-6">
+          <div className="col-span-2 whitespace-pre-line border-r border-t border-[var(--line)] bg-[#f2f4f7] p-5 text-center font-medium leading-6">
             {uiLabel(language, "总学分数\n（学分）", "Total Credits\n(Credits)")}
           </div>
           {curriculum.semesterSummary.map((item) => (
@@ -234,7 +233,9 @@ export function CourseMatrixPage({
                 semesterTone(item.semester * 2 - 1),
               )}
             >
-              <p className="font-serif text-2xl text-[var(--foreground)]">{item.total_credits}</p>
+              <p className="font-serif text-[1.25rem] text-[var(--foreground)] md:text-[1.4rem]">
+                {item.total_credits}
+              </p>
             </div>
           ))}
         </div>
@@ -308,7 +309,9 @@ function MatrixRow({
                 semesterTone(item.semester * 2 - 1),
               )}
             >
-              <p className="font-serif text-2xl text-[var(--foreground)]">{value}</p>
+              <p className="font-serif text-[1.5rem] text-[var(--foreground)] md:text-[1.7rem]">
+                {value}
+              </p>
             </div>
           );
         })}
@@ -358,9 +361,12 @@ function MatrixRow({
                     key={course.id}
                     type="button"
                     onClick={() => onSelect(course)}
-                    className="flex min-h-28 items-center rounded-[1rem] border border-[var(--line)] bg-white p-4 text-left transition-colors hover:bg-[var(--accent-soft)]"
+                    className={cn(
+                      "flex min-h-28 items-center justify-center rounded-[1rem] border p-4 text-center transition-[border-color,background-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_10px_24px_rgba(33,62,168,0.08)]",
+                      courseCardTone(unit),
+                    )}
                   >
-                    <div>
+                    <div className="w-full text-center">
                       <p className="text-sm leading-6 text-[var(--foreground)]">
                         {titleForCourse(course, language)}
                       </p>
@@ -473,6 +479,14 @@ function semesterTone(unit: number) {
   if (semester === 2) return "bg-[#f7f8ef]";
   if (semester === 3) return "bg-[#faf1f0]";
   return "bg-[#f5f2fa]";
+}
+
+function courseCardTone(unit: number) {
+  const semester = Math.ceil(unit / 2);
+  if (semester === 1) return "border-[#dbe4f2] bg-[#eef3fb] hover:bg-[#e3ebf8]";
+  if (semester === 2) return "border-[#dfe3c9] bg-[#f1f4df] hover:bg-[#e8edd1]";
+  if (semester === 3) return "border-[#ebd4cf] bg-[#f8e8e5] hover:bg-[#f2ddd9]";
+  return "border-[#dfd6ea] bg-[#efe9f7] hover:bg-[#e6def1]";
 }
 
 function ordinalSemesterZh(semester: number) {
