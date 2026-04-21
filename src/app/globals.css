@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfdfc;
-  --foreground: #1d2320;
-  --muted: #66706b;
-  --line: #d9dfda;
-  --card: #f6f8f5;
-  --accent: #35594a;
-  --accent-soft: #e8efea;
+  --background: #f7f8fb;
+  --foreground: #111111;
+  --muted: #5c6370;
+  --line: #cfd5df;
+  --card: #ffffff;
+  --accent: #213ea8;
+  --accent-soft: #e8eefc;
+  --ink: #0f0f0f;
 }
 
 * {
@@ -20,11 +21,41 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfcfb 100%);
+  background:
+    linear-gradient(90deg, rgba(33, 62, 168, 0.045) 1px, transparent 1px),
+    linear-gradient(rgba(33, 62, 168, 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, #ffffff 0%, #f5f8ff 100%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
   color: var(--foreground);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    "Geist",
+    "汉仪旗黑",
+    "Hanyi Qihei",
+    "HYQiHei 65S",
+    "Microsoft YaHei",
+    "PingFang SC",
+    "Noto Sans SC",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
+  font-family:
+    "汉仪旗黑",
+    "Hanyi Qihei",
+    "HYQiHei 65S",
+    "Geist",
+    "Microsoft YaHei",
+    "PingFang SC",
+    "Noto Sans SC",
+    sans-serif;
 }
 
 a {
@@ -35,6 +66,11 @@ a {
 button,
 select {
   font: inherit;
+}
+
+::selection {
+  background: #213ea8;
+  color: #ffffff;
 }
 
 select {

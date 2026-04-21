@@ -9,7 +9,7 @@ export type Course = {
   course_type:
     | "Studio"
     | "Foundational Studio"
-    | "Seminar-Lecture"
+    | "Seminar or Lecture"
     | "Professional Development";
   credits: number;
   semester: number | number[];
@@ -83,6 +83,9 @@ export type CurriculumData = {
     general_zh: string;
     general_en: string;
     general_credits: number;
+    practice_zh?: string;
+    practice_en?: string;
+    practice_credits?: number;
     total_credits: number;
   }>;
   pathway: PathwayStage[];

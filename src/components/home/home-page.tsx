@@ -15,14 +15,30 @@ export function HomePage({ curriculum }: { curriculum: CurriculumData }) {
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-14 px-6 py-12 lg:px-10 lg:py-16">
       <SectionHeading
-        eyebrow="F+P Group"
-        title="Public & Foundation Courses"
+        eyebrow={uiLabel(language, "F+P 学组", "F+P Group")}
+        title={uiLabel(language, "公共与基础课程", "Public & Foundation Courses")}
         description={formatText(
           "F+P 前四学期课程路径与结构。",
           "The curriculum pathway and structure across the first four semesters of F+P.",
           language,
         )}
       />
+
+      <section className="rounded-[2rem] border border-[var(--line)] bg-white p-3 lg:p-4">
+        <div className="mb-3 flex items-end justify-between gap-4 px-2 pt-1">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-[var(--muted)]">
+            {uiLabel(language, "课程路径图示", "Curriculum Pathway Diagram")}
+          </p>
+          <p className="text-[11px] text-[var(--muted)]">
+            {uiLabel(language, "引自 0416 slides", "From 0416 slides")}
+          </p>
+        </div>
+        <img
+          src="/slide-images/pathway-slide-alt.png"
+          alt="Curriculum pathway diagram from slides"
+          className="w-full rounded-[1.35rem] bg-[#fbfbfb]"
+        />
+      </section>
 
       <section className="grid gap-6 lg:grid-cols-[1.35fr_0.65fr]">
         <div className="rounded-[2rem] border border-[var(--line)] bg-[var(--card)] p-6 lg:p-8">
@@ -87,37 +103,11 @@ export function HomePage({ curriculum }: { curriculum: CurriculumData }) {
         </div>
       </section>
 
-      <section className="rounded-[2rem] border border-[var(--line)] bg-[var(--card)] p-6 lg:p-8">
-        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-[var(--muted)]">
-              {uiLabel(language, "Studio 形式", "Studio Format")}
-            </p>
-            <h2 className="mt-5 font-serif text-3xl leading-tight">
-              {uiLabel(language, "PBL 作为 Studio 的组织方式", "PBL as the Studio Format")}
-            </h2>
-          </div>
-          <div className="grid gap-4 md:grid-cols-3">
-            {[
-              uiLabel(language, "项目主题", "Project Theme"),
-              uiLabel(language, "问题驱动", "Problem Framing"),
-              uiLabel(language, "阶段展示", "Presentation"),
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-[1.5rem] border border-[var(--line)] bg-white p-5 text-sm leading-7 text-[var(--foreground)]"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <DetailDrawer
         open={Boolean(selectedStage)}
         title={selectedStage ? formatText(selectedStage.title_zh, selectedStage.title_en, language) : ""}
         subtitle={selectedStage?.year}
+        closeLabel={uiLabel(language, "关闭", "Close")}
         onClose={() => setSelectedStage(null)}
       >
         {selectedStage ? (
@@ -126,15 +116,15 @@ export function HomePage({ curriculum }: { curriculum: CurriculumData }) {
               <p>{formatText(selectedStage.description_zh, selectedStage.description_en, language)}</p>
             </div>
             <StageList
-              title={uiLabel(language, "Skills", "Skills")}
+              title={uiLabel(language, "技能", "Skills")}
               items={language === "en" ? selectedStage.skill_en : selectedStage.skill_zh}
             />
             <StageList
-              title={uiLabel(language, "Knowledge", "Knowledge")}
+              title={uiLabel(language, "知识", "Knowledge")}
               items={language === "en" ? selectedStage.knowledge_en : selectedStage.knowledge_zh}
             />
             <StageList
-              title={uiLabel(language, "Competence", "Competence")}
+              title={uiLabel(language, "能力", "Competence")}
               items={language === "en" ? selectedStage.competence_en : selectedStage.competence_zh}
             />
           </div>

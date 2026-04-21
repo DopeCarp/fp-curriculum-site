@@ -12,10 +12,13 @@
       "foundation_en": "Foundation Courses",
       "public_zh": "公共课程",
       "public_en": "Public Courses",
-      "general_zh": "通识课",
-      "general_en": "General Courses",
-      "general_credits": 12,
-      "total_credits": 25
+      "general_zh": "通识课程",
+      "general_en": "Other Courses",
+      "general_credits": 9.5,
+      "practice_zh": "集中实践课程",
+      "practice_en": "Practice Courses",
+      "practice_credits": 4,
+      "total_credits": 26.5
     },
     {
       "semester": 2,
@@ -23,10 +26,13 @@
       "foundation_en": "Foundation Courses",
       "public_zh": "公共课程",
       "public_en": "Public Courses",
-      "general_zh": "通识课",
-      "general_en": "General Courses",
-      "general_credits": 13,
-      "total_credits": 26
+      "general_zh": "通识课程",
+      "general_en": "Other Courses",
+      "general_credits": 10.5,
+      "practice_zh": "集中实践课程",
+      "practice_en": "Practice Courses",
+      "practice_credits": 4,
+      "total_credits": 27.5
     },
     {
       "semester": 3,
@@ -34,10 +40,13 @@
       "foundation_en": "Foundation Courses",
       "public_zh": "公共课程",
       "public_en": "Public Courses",
-      "general_zh": "通识课",
-      "general_en": "General Courses",
-      "general_credits": 5,
-      "total_credits": 20
+      "general_zh": "通识课程",
+      "general_en": "Other Courses",
+      "general_credits": 4.5,
+      "practice_zh": "集中实践课程",
+      "practice_en": "Practice Courses",
+      "practice_credits": 0,
+      "total_credits": 19.5
     },
     {
       "semester": 4,
@@ -45,9 +54,12 @@
       "foundation_en": "Foundation Courses",
       "public_zh": "公共课程",
       "public_en": "Public Courses",
-      "general_zh": "通识课",
-      "general_en": "General Courses",
+      "general_zh": "通识课程",
+      "general_en": "Other Courses",
       "general_credits": 1,
+      "practice_zh": "集中实践课程",
+      "practice_en": "Practice Courses",
+      "practice_credits": 0,
       "total_credits": 2
     }
   ],
@@ -67,7 +79,7 @@
     },
     {
       "year": "Year 2",
-      "title_zh": "衔接专向",
+      "title_zh": "衔接学组",
       "title_en": "Bridging Specialization",
       "description_zh": "在跨媒介训练中形成面向不同方向的衔接能力。",
       "description_en": "Form bridging capabilities across media as students move toward specialization.",
@@ -80,7 +92,7 @@
     },
     {
       "year": "Year 3",
-      "title_zh": "能力成长",
+      "title_zh": "能力生长",
       "title_en": "Capability Growth",
       "description_zh": "在结构、实现、计算与协作中扩展综合能力。",
       "description_en": "Expand integrated capabilities in structure, realization, computation, and collaboration.",
@@ -93,7 +105,7 @@
     },
     {
       "year": "Year 4",
-      "title_zh": "创新转化",
+      "title_zh": "旋创新",
       "title_en": "Spinovation",
       "description_zh": "将课程积累转化为项目展示、研究表达与实践输出。",
       "description_en": "Translate accumulated learning into project presentation, research articulation, and practice outcomes.",

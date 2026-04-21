@@ -1,19 +1,22 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { ReactNode } from "react";
 
 export function DetailDrawer({
   open,
   title,
   subtitle,
+  closeLabel = "Close",
   onClose,
   children,
 }: {
   open: boolean;
   title: string;
   subtitle?: string;
+  closeLabel?: string;
   onClose: () => void;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <AnimatePresence>
@@ -48,7 +51,7 @@ export function DetailDrawer({
                 className="rounded-full border border-[var(--line)] px-3 py-1 text-sm"
                 onClick={onClose}
               >
-                Close
+                {closeLabel}
               </button>
             </div>
             <div className="py-6">{children}</div>

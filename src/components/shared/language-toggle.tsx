@@ -15,14 +15,14 @@ export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="inline-flex rounded-full border border-[var(--line)] bg-white/90 p-1 text-sm">
+    <div className="inline-flex flex-nowrap rounded-full border border-[var(--line)] bg-white/90 p-1 text-sm">
       {options.map((option) => (
         <button
           key={option.value}
           type="button"
           onClick={() => setLanguage(option.value)}
           className={cn(
-            "relative rounded-full px-3 py-1.5 transition-colors",
+            "relative inline-flex min-w-[3.5rem] items-center justify-center whitespace-nowrap rounded-full px-3 py-1.5 text-[13px] transition-colors",
             language === option.value ? "text-[var(--accent)]" : "text-[var(--muted)]",
           )}
         >
